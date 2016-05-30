@@ -111,7 +111,7 @@ sizes, pagination, etc.
 }
 .swiper-slide-visible {
 	/* Specific visible slide styling: */	
-
+display:block;
 }
 /* ===============================================================
 Pagination Styles

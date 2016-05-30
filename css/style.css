@@ -239,14 +239,14 @@ video.bgvid {position: fixed; right: 0; bottom: 0; min-width: 100%; min-height: 
 /*-------------------------------------------------------------------------------------------------------------------------------*/
 /* 05 - HEADER */
 /*-------------------------------------------------------------------------------------------------------------------------------*/
-header{position: absolute; left: 0px; top: 0px; width: 100%; z-index: 11; -webkit-backface-visibility: hidden;}
-#logo{position: relative; float: left; margin-left: 50px; margin-top: 42px;}
+header{position: absolute; left: 0px; top: 0px; width: 100%; z-index: 11; -webkit-backface-visibility: hidden;padding-bottom: 20px}
+#logo{position: relative; float: left; margin-left: 50px; margin-top: 30px;}
 #logo img{position: relative; float: left;}
 #logo img.act{position: absolute; left: 0px; top: 0px; opacity:0;}
 nav{position: relative; float: right; padding-right: 45px;}
 nav a{position: relative; float: left; color: #fff; font-size: 13px; text-transform: uppercase; height: 39px; line-height: 39px; padding:0px 15px; margin: 30px 5px 0px 5px;}
-nav a:hover{background:#44ac6f; color: #fff; border-radius: 10px;}
-nav a.act{background:#44ac6f;border-radius: 10px;}
+nav a:hover{background:#44ac6f; color: #fff; border-radius: 4px;}
+nav a.act{background:#44ac6f;border-radius: 4px;}
 nav ul{position: relative; float: left;}
 nav ul li{background: none; position: relative; float: left;}
 nav ul li:before, nav ul li:after{display:none;}
@@ -258,7 +258,7 @@ nav ul ul li{position: relative; float: left; margin-top: 0px; padding-top: 0px;
 nav ul ul li a{height: 0px; font-size: 0px; line-height: 0px; padding: 0px; margin: 0px; color: #777777; background: #fff; width: 200%; text-align: center; left: -50%;}
 nav ul ul li a:after{display: none;}
 nav .submeny:hover ul li a{height: 39px; font-size: 13px; line-height: 39px;}
-nav .submeny:hover .submeny-top{background:#44ac6f; color: #fff;border-radius: 10px;}
+nav .submeny:hover .submeny-top{background:#44ac6f; color: #fff;border-radius: 4px;}
 /*header.act{background:#fff; box-shadow: 0px 1px 5px rgba(0,0,0,0.15);}*/
 /*header.act #logo{background:#fff; margin-top: 27px;}*/
 /*header.act #logo img{opacity:0;}*/
@@ -380,6 +380,8 @@ footer{background: #1b1b1b; position: relative;}
     .type-1-text h1, .type-1-text h2{color:#fff;}
     .type-1-text p{color:#dddddd;}
     .type-1-text .row{height: 100%;}
+    .type-1-center{text-align: center; height: 100%; display: table; vertical-align:middle;}
+
     .type-1-text .type-1-center{text-align: center; height: 100%; display: table; vertical-align:middle;}
     .type-1-text .button{margin: 0px 15px; margin-bottom: 60px;}
     .type-1-text article{margin-top: 145px;}
@@ -606,8 +608,8 @@ footer{background: #1b1b1b; position: relative;}
 .new-block article{float: none; width: auto;}
 .new-block.type-3{background: #fbfbfb;}
 .new-block.color-background{
-	color: #01a8a2;
-	background-color: #01a8a2;
+	color: #4861a8;
+	background-color: #4861a8;
 }
 .new-block.color-background article *, .new-block.color-background .titel-left{color: #fff;}
 .new-block.color-background ul li, .new-block.color-background p, .new-block.color-background .page-tagline .description{color: rgba(255, 255, 255, 0.8);}
@@ -1024,7 +1026,7 @@ blockquote *:before{display: none;}
 .blog-post{margin-bottom: 90px; clear: both;}
 .blog-post .thumbnail-entry{display: block; margin-bottom: 40px;}
 .blog-post .thumbnail-entry img{display: block; width: 100%; height: auto;}
-.blog-post .thumbnail-entry blockquote{background: url(../img/theme-1/blockquote-bg-1.png) 40px 30px no-repeat #f8f8f8; padding: 70px 40px 20px 40px; font-size: 20px; line-height: 24px; color: #222; text-transform: uppercase; font-family: 'bold'; border-left: 5px #44ac6f solid;}
+.blog-post .thumbnail-entry blockquote{background: url(../img/blockquote-icon.png) 40px 30px no-repeat #f8f8f8; padding: 70px 40px 20px 40px; font-size: 20px; line-height: 24px; color: #222; text-transform: uppercase; font-family: 'bold'; border-left: 5px #44ac6f solid;}
 .blog-post .thumbnail-entry blockquote.style-2{background: none; padding-top: 20px; padding-bottom: 20px; position: relative; border: none;}
 .blog-post .thumbnail-entry blockquote.style-2:before{width: 2px; top: 18px; bottom: 18px; position: absolute; left: 0; background: #44ac6f; content: "";}
 .blog-post .thumbnail-entry blockquote footer{background: none; font-size: 16px; line-height: 30px; color: #777; font-family: 'regular'; margin-top: 5px;}
@@ -1929,8 +1931,8 @@ body.teaser .styled-form .field-wrapper input{background: rgba(255,255,255,0.1);
 .bottom-screens-align{padding-bottom: 70px;}
 .counters-box{text-align: justify; color: #44AC6F;}
 /*.counters-box .fa{font-size: 50px; line-height: 50px; margin-bottom: 25px;}*/
-.counters-box .description{font-size: 15px; line-height: 24px; margin: 0 30px 20px 30px;color:#575757;}
-.counters-box .counter{font-size: 25px; line-height: 36px; font-family: 'bold', sans-serif; display: block; /*text-align: center;*/ display: block; margin-bottom: 10px;margin-left: 27px;}
+.counters-box .description{font-size: 15px; line-height: 24px; margin: 0 30px 20px 25px;color:#575757;}
+.counters-box .counter{font-size: 25px; line-height: 36px; font-family: 'bold', sans-serif; display: block; text-align: center; display: block; margin-bottom: 10px;margin-left: 27px;}
 /**/
 .filtergrid-sizer, .filter-item{width: 25%;}
 .filter-item img{display: block; width: 100%; height: auto; box-shadow: 3px 3px 15px rgba(0,0,0,0.30); position: relative; cursor: pointer;}
