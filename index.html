@@ -676,7 +676,7 @@
                 <div class="row">
                     <div class="col-md-12 wow fadeInUp" data-wow-delay="0.3s">
 
-                        <div class="swiper-container " data-autoplay="0" data-loop="0" data-speed="500" data-center="0" data-slides-per-view="1" id="swiper-unique-id-9">
+                        <div class="swiper-container " data-autoplay="0" data-loop="0" data-speed="500" data-center="0" data-slides-per-view="1" style="">
 
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide" style="background-color: #4861a8;">
@@ -895,17 +895,10 @@
                                 </div>
                             </div>
 
-                            <div class="pagination">
-                            <!-- <div class="pagination testimonial-widget-pagination pagination-swiper-unique-id-0">
-                                <span class="swiper-pagination-switch swiper-visible-switch swiper-active-switch">
-                                </span>
-                                <span class="swiper-pagination-switch">
-                                </span>
-                                <span class="swiper-pagination-switch">
-                                </span>
-                            </div> -->
-                            </div>
+                            <div class="pagination" style="display: none"></div>  
 
+                           <div class="swiper-arrow left default-arrow" style="left:-4px"><span aria-hidden="true" class="glyphicon glyphicon-chevron-left"></span></div>  
+                           <div class="swiper-arrow right default-arrow" style="right:4px"><span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span></div>  
                         </div>
                     </div>
                 </div>
@@ -1504,6 +1497,9 @@
                                     </div>
                                 </div>
                                 <div style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInRight;" class="col-md-7 col-md-offset-1 wow fadeInRight animated" data-wow-delay="0.3s">
+                                 <div id="message" style="font-size: 15px;color: rgb(204, 255, 157);padding-bottom: 11px;display: none;text-align: center;">
+                               
+                                     </div>
                                     <form class="contact-form"  method="post" id="idForm" >
                                         <input class="required" type="text" placeholder="Your name" value="" name="name" />
                                         <input class="required" type="email" placeholder="Your email" value="" name="email" />
@@ -1527,6 +1523,10 @@
                    
                     <footer>
                         <div class="subscribe">
+
+                           <div id="message1" style="font-size: 15px;color: rgb(204, 255, 157);padding-bottom: 11px;display: none;text-align: center;">
+                               
+                            </div>
                             <span class="subscribe-text">
                                 Stay informed our updates
                             </span>
@@ -1697,7 +1697,12 @@
                            dataType: 'json',
                            success: function(data)
                            {
-                               alert(data.userMessage); 
+                               // alert(data.userMessage);
+                               $( '#idForm' ).each(function(){
+                                    this.reset();
+                                }); 
+                                $('#message').text(data.userMessage);
+                                $("#message").show();
                            }
                          });
 
@@ -1727,7 +1732,13 @@
                            dataType: 'json',
                            success: function(data)
                            {
-                               alert(data.userMessage); 
+                               // alert(data.userMessage); 
+                               $( '#idForm1' ).each(function(){
+                                    this.reset();
+                                }); 
+                                $('#message1').text(data.userMessage);
+                                $("#message1").show();
+                               
                            }
                          });
 
